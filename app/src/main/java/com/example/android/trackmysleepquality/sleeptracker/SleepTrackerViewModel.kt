@@ -114,5 +114,15 @@ class SleepTrackerViewModel(
         super.onCleared()
         viewModelJob.cancel()
     }
+    
+    /// THIS IS A GENERAL PATTERN FOR COROUTINES......
+//    fun someWorkNeedsToBeDone {
+//        uiScope.launch { suspendFunction() }
+//    }
+//    private suspend fun suspendFunction() {
+//        withContext(Dispatchers.IO) {
+//            doSomeLongWorkHere()
+//        }
+//    }
 }
 
